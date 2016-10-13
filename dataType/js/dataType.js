@@ -1,4 +1,4 @@
-window.onload=function(){
+var dataTypeTest = function(){
 	/**
 	 * JavaScript基本数据类型
 	 */
@@ -38,6 +38,11 @@ window.onload=function(){
 	alert("array-1:"+ typeof(h));
 	alert("h[0]=h0:"+h[0]);
 	
+	//function
+	var i = function(){
+		
+	}
+	alert("function:"+typeof(i));
+	
 	alert("end");
-
 }

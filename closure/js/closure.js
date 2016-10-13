@@ -1,4 +1,4 @@
-window.onload=function(){
+var closureTest = function(){
 	/**
 	 * JavaScript闭包
 	 */
