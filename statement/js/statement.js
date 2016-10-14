@@ -1,18 +1,18 @@
-var statementTest = function() {
-	forinTest1();
-	forinTest2();
+var statementTest = function () {
+    forinTest1();
+    forinTest2();
 }
 
 /**
  * for-in语句:
- * 			for (property in expression) statement
- * 			一种精准的迭代语句,可以用来枚举对象的属性
+ *            for (property in expression) statement
+ *            一种精准的迭代语句,可以用来枚举对象的属性
  */
 function forinTest1() {
-	for(var propName in window) {
-		document.write(propName);
-		document.writeln("</br>");
-	}
+    for (var propName in window) {
+        document.write(propName);
+        document.writeln("</br>");
+    }
 }
 
 /**
@@ -20,18 +20,26 @@ function forinTest1() {
  */
 function forinTest2() {
 
-	/**
-	 * 定义个person对象
-	 */
-	var person = {
-		"name": "andy",
-		"age": 22,
-		"gender": "男"
-	}
+    /**
+     * 定义个person对象
+     */
+    var person = {
+        "name": "andy",
+        "age": 22,
+        "gender": "男"
+    }
 
-	for(var propName in person) {
-		document.write(propName);
-		document.write("</br>");
-	}
-
+    for (var propName in person) {
+        document.write(propName);
+        document.write("</br>");
+    }
 }
+
+/**
+ * with语句:    将代码的作用域设置到一个特定对象中
+ *        语法:
+ *        with (expression) statement;
+ */
+function withTest() {
+}
+
