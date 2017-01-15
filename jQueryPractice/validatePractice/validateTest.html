@@ -3,8 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
+    <script type="text/javascript" src="../lib/jquery-3.1.1.min.js"></script>
+    <script type="text/javascript" src="../lib/jquery.validate.min.js"></script>
+    <script type="text/javascript" src="validate.js"></script>
 </head>
 <body>
-
+<form id="testForm" action="hello.html">
+    Username:<input type="text"  name="username" >
+    <br/>
+    age:<input type="text"  name="age">
+    <br/>
+    email:<input type="text" name="email">
+    <br/>
+    password:<input type="text" id="passwordId"  name="password">
+    confirmPassword:<input type="text"  name="confirmPassword">
+    <br/>
+    <input id="subBtn" type="submit" name="提交">
+</form>
 </body>
 </html>
