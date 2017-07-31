@@ -8,8 +8,9 @@ var functionTest = function () {
     // alert(typeof funtest)
     // fun1(callbackfunction);
     // jsonTest();
-    var father = callBaceFather(callBack);
-    alert(father);
+    // var father = callBaceFather(callBack);
+    // alert(father);
+    argumentsTest("a","b","c");
 }
 
 var callBaceFather = function(callBac){
@@ -46,3 +47,10 @@ var fun1 = function (callback) {
 var callbackfunction = function (data) {
     alert("callbackfunction running.." + data);
 }
+
+var argumentsTest =  function(){
+    var length = arguments.length;
+    console.log("arg length:"+length);
+
+}
+
